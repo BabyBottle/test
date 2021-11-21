@@ -1,7 +1,7 @@
 import subprocess
 
 def test_main():
-    ExceptedOutput = 'Hello wworld'
+    ExceptedOutput = 'Hello world'
     output = subprocess.Popen('./hello', stdout=subprocess.PIPE)
     output_string = output.stdout.read().decode('utf-8')
     if(output_string == ExceptedOutput):
